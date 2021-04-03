@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>101154146531-ntefc6ml74vhttee6q3ma0unp43s6ius.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.101154146531-ntefc6ml74vhttee6q3ma0unp43s6ius</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB-kUbEAzigkBKmF_6lAubP1gp6R7ihdvQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>101154146531</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.joglik.IChameManager</string>
+	<key>PROJECT_ID</key>
+	<string>ichame-89e6a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ichame-89e6a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:101154146531:ios:9bbcd60ca4b52956339dd6</string>
+	<key>DATABASE_URL</key>
+	<string>https://ichame-89e6a-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
