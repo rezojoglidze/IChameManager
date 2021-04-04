@@ -32,8 +32,8 @@
 		A91227DA2618AE50009A6EDB /* MoreScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912279D2618AE4D009A6EDB /* MoreScreenHeaderView.swift */; };
 		A91227DB2618AE50009A6EDB /* MoreScreenHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A912279E2618AE4D009A6EDB /* MoreScreenHeaderView.xib */; };
 		A91227DC2618AE50009A6EDB /* MoreScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A912279F2618AE4D009A6EDB /* MoreScreen.storyboard */; };
-		A91227DF2618AE50009A6EDB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A52618AE4E009A6EDB /* Menu.swift */; };
-		A91227E02618AE50009A6EDB /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A62618AE4E009A6EDB /* MenuService.swift */; };
+		A91227DF2618AE50009A6EDB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A52618AE4E009A6EDB /* Order.swift */; };
+		A91227E02618AE50009A6EDB /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A62618AE4E009A6EDB /* OrderService.swift */; };
 		A91227E12618AE50009A6EDB /* More.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A82618AE4E009A6EDB /* More.swift */; };
 		A91227E22618AE50009A6EDB /* MoreScreenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227A92618AE4E009A6EDB /* MoreScreenService.swift */; };
 		A91227E32618AE50009A6EDB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227AC2618AE4E009A6EDB /* UserService.swift */; };
@@ -92,8 +92,8 @@
 		A912279D2618AE4D009A6EDB /* MoreScreenHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreScreenHeaderView.swift; sourceTree = "<group>"; };
 		A912279E2618AE4D009A6EDB /* MoreScreenHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreScreenHeaderView.xib; sourceTree = "<group>"; };
 		A912279F2618AE4D009A6EDB /* MoreScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreScreen.storyboard; sourceTree = "<group>"; };
-		A91227A52618AE4E009A6EDB /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		A91227A62618AE4E009A6EDB /* MenuService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		A91227A52618AE4E009A6EDB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A91227A62618AE4E009A6EDB /* OrderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		A91227A82618AE4E009A6EDB /* More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = More.swift; sourceTree = "<group>"; };
 		A91227A92618AE4E009A6EDB /* MoreScreenService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreScreenService.swift; sourceTree = "<group>"; };
 		A91227AC2618AE4E009A6EDB /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -267,20 +267,20 @@
 		A91227A02618AE4E009A6EDB /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A91227A42618AE4E009A6EDB /* Menu */,
-				A91227A72618AE4E009A6EDB /* MoreScreen */,
 				A91227AA2618AE4E009A6EDB /* Authentication */,
+				A91227A42618AE4E009A6EDB /* Order */,
+				A91227A72618AE4E009A6EDB /* MoreScreen */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		A91227A42618AE4E009A6EDB /* Menu */ = {
+		A91227A42618AE4E009A6EDB /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				A91227A52618AE4E009A6EDB /* Menu.swift */,
-				A91227A62618AE4E009A6EDB /* MenuService.swift */,
+				A91227A52618AE4E009A6EDB /* Order.swift */,
+				A91227A62618AE4E009A6EDB /* OrderService.swift */,
 			);
-			path = Menu;
+			path = Order;
 			sourceTree = "<group>";
 		};
 		A91227A72618AE4E009A6EDB /* MoreScreen */ = {
@@ -628,9 +628,9 @@
 				A91227D72618AE50009A6EDB /* MoreScreenViewModel.swift in Sources */,
 				A91227E32618AE50009A6EDB /* UserService.swift in Sources */,
 				A91227F22618AE99009A6EDB /* IChameTabbarController.swift in Sources */,
-				A91227DF2618AE50009A6EDB /* Menu.swift in Sources */,
+				A91227DF2618AE50009A6EDB /* Order.swift in Sources */,
 				A924837E26177BD40091847A /* SceneDelegate.swift in Sources */,
-				A91227E02618AE50009A6EDB /* MenuService.swift in Sources */,
+				A91227E02618AE50009A6EDB /* OrderService.swift in Sources */,
 				A9286B5E2617A55800F3D42A /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

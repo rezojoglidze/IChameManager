@@ -29,7 +29,7 @@ class MainTabbarCoordinator: TabBarCoordinator<TabbarRoute> {
         menu = OrderCoordinator()
         moreScreen = MoreSceenCoordinator()
         
-        Self.initCoordinator(coordinator: menu, title: "მენიუ", image: "tab-icon-main")
+        Self.initCoordinator(coordinator: menu, title: "შეკვეთები", image: "tab-icon-main")
         Self.initCoordinator(coordinator: moreScreen, title: "მეტი", image: "more_icon")
         
         self.menuRouter = menu.strongRouter

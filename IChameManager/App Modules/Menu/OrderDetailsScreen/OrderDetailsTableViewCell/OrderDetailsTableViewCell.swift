@@ -27,7 +27,7 @@ class OrderDetailsTableViewCell: UITableViewCell {
     func fill(item: MenuItem, isHiddenAddBtn: Bool = false) {
         self.titleLbl.text = item.name
         self.descriptionLbl.text = item.description
-        self.menuItemImageView.image = item.type.image
+//        self.menuItemImageView.image = item.type.image
         
         if isHiddenAddBtn {
             removeBtn.isHidden = false

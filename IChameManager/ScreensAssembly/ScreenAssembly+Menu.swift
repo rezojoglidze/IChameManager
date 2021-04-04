@@ -17,12 +17,14 @@ extension ScreensAssembly {
     }
     
     func setupMenuScreen() {
-        
+        self.container.register(OrderService.self) { (_) -> OrderService in
+            return OrderService()
+        }
         self.container.register(OrderScreenViewModel.self) { (resolver, router: StrongRouter<OrderRoute>) -> OrderScreenViewModel in
-            let viewModel = OrderScreenViewModel(router: router)
+            let orderService = resolver.resolve(OrderService.self)
+            let viewModel = OrderScreenViewModel(router: router, orderService: orderService)
             return viewModel
         }
-        
         self.container.register(OrderScreenViewController.self) { (resolver, router: StrongRouter<OrderRoute>) -> OrderScreenViewController in
             let viewModel = resolver.resolve(OrderScreenViewModel.self, argument: router)
             let viewController = OrderScreenViewController.loadFromStoryboard()

@@ -13,17 +13,7 @@ class Network {
     typealias StatusBlock = ((_ error: Error?) -> Void)
 }
 
-class UserService {
-    func registration(email: String, password: String, success: @escaping (FirebaseAuth.User) -> Void, fail: @escaping Network.StatusBlock) {
-        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            guard let user = authResult?.user, error == nil else {
-                fail(error)
-                return
-            }
-            success(user)
-        }
-    }
-    
+class UserService {    
     func authorization(email: String,
                        password: String,
                        success: @escaping(FirebaseAuth.User) -> Void,

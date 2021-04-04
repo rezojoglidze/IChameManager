@@ -15,24 +15,36 @@ protocol OrderScreenViewModelProtocol {
     func item(at indexPath: IndexPath) -> (type: MenuType, img: UIImage?)?
     
     func openMenuDetails(with indexPath: IndexPath)
+    
+    func loadOrders(fail: @escaping Network.StatusBlock)
 }
 
 class OrderScreenViewModel {
     var router: StrongRouter<OrderRoute>
     
-    var menu: Menu?
+    var orders: Order?
+    var orderService: OrderService?
     
-    init(router: StrongRouter<OrderRoute>) {
+    init(router: StrongRouter<OrderRoute>,
+         orderService: OrderService?) {
         self.router = router
+        self.orderService = orderService
     }
 }
 
 extension OrderScreenViewModel: OrderScreenViewModelProtocol {
+    func loadOrders(fail: @escaping Network.StatusBlock) {
+        orderService?.loadOrders(success: {[weak self] (orders) in
+            self?.orders = orders
+            print("orderss ->", orders)
+        }, fail: fail)
+    }
+    
     func openMenuDetails(with indexPath: IndexPath) {
         
     }
     
     func item(at indexPath: IndexPath) -> (type: MenuType, img: UIImage?)? {
-        return menu?.menuScreenDataSource[indexPath.row]
+        return nil
     }
 }

@@ -25,6 +25,7 @@ class OrderScreenViewController: UIViewController {
         
         setupTableView()
         setupNavigationBar()
+        viewModel.loadOrders(fail: self.standardFailBlock)
     }
     
     private func setupNavigationBar() {
