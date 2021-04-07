@@ -24,19 +24,10 @@ class OrderDetailsTableViewCell: UITableViewCell {
     var indexPath: IndexPath?
     var type: MenuType?
     
-    func fill(item: MenuItem, isHiddenAddBtn: Bool = false) {
+    func fill(item: MenuItem) {
         self.titleLbl.text = item.name
         self.descriptionLbl.text = item.description
-//        self.menuItemImageView.image = item.type.image
-        
-        if isHiddenAddBtn {
-            removeBtn.isHidden = false
-            addBtn.isHidden = true
-            let totalAmount = item.price //* Double(item.count).rounded(toPlaces: 2)
-            self.priceLbl.text = "რაოდენობა:\(item.count), ფასი: \(totalAmount)₾"
-        } else {
-            self.priceLbl.text = "\(item.price) ₾"
-        }
+        self.priceLbl.text = "\(item.price) ₾"
     }
     
     @IBAction func actionBtnTapped(_ sender: UIButton!) {

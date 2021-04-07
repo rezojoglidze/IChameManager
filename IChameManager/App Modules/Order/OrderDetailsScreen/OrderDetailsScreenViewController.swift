@@ -1,9 +1,8 @@
 //
-//  MenuDetailsScreenViewController.swift
-//  IChame
+//  ddViewController.swift
+//  IChameManager
 //
-//  Created by Rezo Joglidze on 3/19/21.
-//  Copyright © 2021 Rezo Joglidze. All rights reserved.
+//  Created by Rezo Joglidze on 4/7/21.
 //
 
 import UIKit
@@ -13,14 +12,13 @@ import RxSwift
 class OrderDetailsScreenViewController: UIViewController {
     
     var viewModel: OrderDetailsScreenViewModel!
-    var navigationTitle: String!
     
     @IBOutlet private weak var tableView: UITableView!
     
     private var disposeBag = DisposeBag()
 
-    static func instantiate(strongRouter: StrongRouter<OrderRoute>, menuItems: [MenuItem], title: String) -> Self {
-        let viewController = ScreensAssembly.shared.container.resolve(Self.self, arguments: strongRouter, menuItems, title) ?? .init()
+    static func instantiate(strongRouter: StrongRouter<OrderRoute>, order: Order) -> Self {
+        let viewController = ScreensAssembly.shared.container.resolve(Self.self, arguments: strongRouter, order) ?? .init()
         return viewController
     }
     
@@ -38,7 +36,7 @@ class OrderDetailsScreenViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        navigationItem.title = navigationTitle
+        navigationItem.title = "navigationTitle"
         navigationItem.largeTitleDisplayMode = .never
     }
     

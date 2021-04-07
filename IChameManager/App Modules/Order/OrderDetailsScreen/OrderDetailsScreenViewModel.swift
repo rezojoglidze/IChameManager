@@ -1,9 +1,8 @@
 //
-//  MenuDetailsScreenViewModel.swift
-//  IChame
+//  dd.swift
+//  IChameManager
 //
-//  Created by Rezo Joglidze on 3/19/21.
-//  Copyright © 2021 Rezo Joglidze. All rights reserved.
+//  Created by Rezo Joglidze on 4/7/21.
 //
 
 import Foundation
@@ -26,15 +25,15 @@ class OrderDetailsScreenViewModel {
     
     var router: StrongRouter<OrderRoute>
     
-    private var menuItems: [MenuItem]
+    private var order: Order
 
     var showLoader: Observable<Bool>
     let showLoaderRelay: PublishRelay<Bool> = PublishRelay<Bool>()
 
     init(router: StrongRouter<OrderRoute>,
-         menuItems: [MenuItem]) {
+         order: Order) {
         self.router = router
-        self.menuItems = menuItems
+        self.order = order
         self.showLoader = self.showLoaderRelay.asObservable()
     }
 }
@@ -45,13 +44,10 @@ extension OrderDetailsScreenViewModel: OrderDetailsScreenViewModelProtocol {
     }
     
     func numberOfRows() -> Int {
-        return menuItems.count
+        return 3
     }
     
     func item(at indexPath: IndexPath) -> MenuItem? {
-        if menuItems.indices.contains(indexPath.row) {
-            return menuItems[indexPath.row]
-        }
         return nil
     }
 }

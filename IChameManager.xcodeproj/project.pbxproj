@@ -16,14 +16,10 @@
 		A91227C72618AE4F009A6EDB /* AuthorizationScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227802618AE4D009A6EDB /* AuthorizationScreenViewModel.swift */; };
 		A91227C82618AE4F009A6EDB /* AuthorizationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91227812618AE4D009A6EDB /* AuthorizationScreen.storyboard */; };
 		A91227CC2618AE4F009A6EDB /* OrderScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91227892618AE4D009A6EDB /* OrderScreen.storyboard */; };
-		A91227CD2618AE4F009A6EDB /* OrderScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912278A2618AE4D009A6EDB /* OrderScreenViewController.swift */; };
-		A91227CE2618AE4F009A6EDB /* OrderScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912278B2618AE4D009A6EDB /* OrderScreenViewModel.swift */; };
 		A91227CF2618AE4F009A6EDB /* OrderScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912278D2618AE4D009A6EDB /* OrderScreenTableViewCell.swift */; };
 		A91227D02618AE4F009A6EDB /* OrderScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A912278E2618AE4D009A6EDB /* OrderScreenTableViewCell.xib */; };
 		A91227D12618AE4F009A6EDB /* OrderDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227912618AE4D009A6EDB /* OrderDetailsTableViewCell.swift */; };
 		A91227D22618AE50009A6EDB /* OrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91227922618AE4D009A6EDB /* OrderDetailsTableViewCell.xib */; };
-		A91227D32618AE50009A6EDB /* OrderDetailsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227932618AE4D009A6EDB /* OrderDetailsScreenViewController.swift */; };
-		A91227D42618AE50009A6EDB /* OrderDetailsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227942618AE4D009A6EDB /* OrderDetailsScreenViewModel.swift */; };
 		A91227D52618AE50009A6EDB /* OrderDetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91227952618AE4D009A6EDB /* OrderDetailsScreen.storyboard */; };
 		A91227D62618AE50009A6EDB /* MoreScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227972618AE4D009A6EDB /* MoreScreenViewController.swift */; };
 		A91227D72618AE50009A6EDB /* MoreScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91227982618AE4D009A6EDB /* MoreScreenViewModel.swift */; };
@@ -62,6 +58,10 @@
 		A9286B6E2617A59100F3D42A /* HelveticaNeueLTGEO-65Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9286B682617A59000F3D42A /* HelveticaNeueLTGEO-65Medium.otf */; };
 		A9286B6F2617A59100F3D42A /* HelveticaNeueLTGEO-75Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9286B692617A59000F3D42A /* HelveticaNeueLTGEO-75Bold.otf */; };
 		A9286B702617A59100F3D42A /* HelveticaNeueLTGEO-55Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9286B6A2617A59000F3D42A /* HelveticaNeueLTGEO-55Roman.otf */; };
+		A9972497261E38C70053A489 /* OrderScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9972496261E38C70053A489 /* OrderScreenViewModel.swift */; };
+		A99724B9261E398D0053A489 /* OrderScreenViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99724B8261E398D0053A489 /* OrderScreenViewControlle.swift */; };
+		A99724BE261E40CF0053A489 /* OrderDetailsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99724BD261E40CF0053A489 /* OrderDetailsScreenViewController.swift */; };
+		A99724C1261E40D80053A489 /* OrderDetailsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99724C0261E40D80053A489 /* OrderDetailsScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,14 +76,10 @@
 		A91227802618AE4D009A6EDB /* AuthorizationScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationScreenViewModel.swift; sourceTree = "<group>"; };
 		A91227812618AE4D009A6EDB /* AuthorizationScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationScreen.storyboard; sourceTree = "<group>"; };
 		A91227892618AE4D009A6EDB /* OrderScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderScreen.storyboard; sourceTree = "<group>"; };
-		A912278A2618AE4D009A6EDB /* OrderScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderScreenViewController.swift; sourceTree = "<group>"; };
-		A912278B2618AE4D009A6EDB /* OrderScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderScreenViewModel.swift; sourceTree = "<group>"; };
 		A912278D2618AE4D009A6EDB /* OrderScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderScreenTableViewCell.swift; sourceTree = "<group>"; };
 		A912278E2618AE4D009A6EDB /* OrderScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderScreenTableViewCell.xib; sourceTree = "<group>"; };
 		A91227912618AE4D009A6EDB /* OrderDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A91227922618AE4D009A6EDB /* OrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
-		A91227932618AE4D009A6EDB /* OrderDetailsScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsScreenViewController.swift; sourceTree = "<group>"; };
-		A91227942618AE4D009A6EDB /* OrderDetailsScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsScreenViewModel.swift; sourceTree = "<group>"; };
 		A91227952618AE4D009A6EDB /* OrderDetailsScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderDetailsScreen.storyboard; sourceTree = "<group>"; };
 		A91227972618AE4D009A6EDB /* MoreScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreScreenViewController.swift; sourceTree = "<group>"; };
 		A91227982618AE4D009A6EDB /* MoreScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreScreenViewModel.swift; sourceTree = "<group>"; };
@@ -124,6 +120,10 @@
 		A9286B682617A59000F3D42A /* HelveticaNeueLTGEO-65Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueLTGEO-65Medium.otf"; sourceTree = "<group>"; };
 		A9286B692617A59000F3D42A /* HelveticaNeueLTGEO-75Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueLTGEO-75Bold.otf"; sourceTree = "<group>"; };
 		A9286B6A2617A59000F3D42A /* HelveticaNeueLTGEO-55Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueLTGEO-55Roman.otf"; sourceTree = "<group>"; };
+		A9972496261E38C70053A489 /* OrderScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenViewModel.swift; sourceTree = "<group>"; };
+		A99724B8261E398D0053A489 /* OrderScreenViewControlle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenViewControlle.swift; sourceTree = "<group>"; };
+		A99724BD261E40CF0053A489 /* OrderDetailsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsScreenViewController.swift; sourceTree = "<group>"; };
+		A99724C0261E40D80053A489 /* OrderDetailsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A91227712618AE4D009A6EDB /* AuthModules */,
-				A91227872618AE4D009A6EDB /* Menu */,
+				A91227872618AE4D009A6EDB /* Order */,
 				A91227962618AE4D009A6EDB /* MoreScreen */,
 			);
 			path = "App Modules";
@@ -185,13 +185,13 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
-		A91227872618AE4D009A6EDB /* Menu */ = {
+		A91227872618AE4D009A6EDB /* Order */ = {
 			isa = PBXGroup;
 			children = (
 				A91227882618AE4D009A6EDB /* OrderScreen */,
 				A912278F2618AE4D009A6EDB /* OrderDetailsScreen */,
 			);
-			path = Menu;
+			path = Order;
 			sourceTree = "<group>";
 		};
 		A91227882618AE4D009A6EDB /* OrderScreen */ = {
@@ -199,8 +199,8 @@
 			children = (
 				A912278C2618AE4D009A6EDB /* OrderScreenCell */,
 				A91227892618AE4D009A6EDB /* OrderScreen.storyboard */,
-				A912278A2618AE4D009A6EDB /* OrderScreenViewController.swift */,
-				A912278B2618AE4D009A6EDB /* OrderScreenViewModel.swift */,
+				A99724B8261E398D0053A489 /* OrderScreenViewControlle.swift */,
+				A9972496261E38C70053A489 /* OrderScreenViewModel.swift */,
 			);
 			path = OrderScreen;
 			sourceTree = "<group>";
@@ -218,9 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				A91227902618AE4D009A6EDB /* OrderDetailsTableViewCell */,
-				A91227932618AE4D009A6EDB /* OrderDetailsScreenViewController.swift */,
-				A91227942618AE4D009A6EDB /* OrderDetailsScreenViewModel.swift */,
 				A91227952618AE4D009A6EDB /* OrderDetailsScreen.storyboard */,
+				A99724BD261E40CF0053A489 /* OrderDetailsScreenViewController.swift */,
+				A99724C0261E40D80053A489 /* OrderDetailsScreenViewModel.swift */,
 			);
 			path = OrderDetailsScreen;
 			sourceTree = "<group>";
@@ -592,13 +592,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91227D32618AE50009A6EDB /* OrderDetailsScreenViewController.swift in Sources */,
 				A91227DA2618AE50009A6EDB /* MoreScreenHeaderView.swift in Sources */,
 				A91227C72618AE4F009A6EDB /* AuthorizationScreenViewModel.swift in Sources */,
 				A91227E92618AE50009A6EDB /* ScreenAssembly+Menu.swift in Sources */,
 				A9286B5B2617A55800F3D42A /* Animation+Extensions.swift in Sources */,
 				A91227E22618AE50009A6EDB /* MoreScreenService.swift in Sources */,
 				A9286B5A2617A55800F3D42A /* Double + Extensions.swift in Sources */,
+				A99724C1261E40D80053A489 /* OrderDetailsScreenViewModel.swift in Sources */,
 				A91227E62618AE50009A6EDB /* ScreensAssembly.swift in Sources */,
 				A91227E82618AE50009A6EDB /* ScreenAssembly+Authorization.swift in Sources */,
 				A91227EF2618AE50009A6EDB /* MainCoordinator.swift in Sources */,
@@ -606,8 +606,8 @@
 				A91227EB2618AE50009A6EDB /* OrderCoordinator.swift in Sources */,
 				A91227D92618AE50009A6EDB /* MoreScreenTableViewCell.swift in Sources */,
 				A91227D12618AE4F009A6EDB /* OrderDetailsTableViewCell.swift in Sources */,
+				A99724B9261E398D0053A489 /* OrderScreenViewControlle.swift in Sources */,
 				A91227EE2618AE50009A6EDB /* MainTabbarCoordinator.swift in Sources */,
-				A91227D42618AE50009A6EDB /* OrderDetailsScreenViewModel.swift in Sources */,
 				A91227E52618AE50009A6EDB /* ScreenAssembly+MoreScreen.swift in Sources */,
 				A924837C26177BD40091847A /* AppDelegate.swift in Sources */,
 				A91227C62618AE4F009A6EDB /* AuthorizationScreenViewController.swift in Sources */,
@@ -616,15 +616,15 @@
 				A91227EA2618AE50009A6EDB /* AuthCoordinator.swift in Sources */,
 				A9286B5D2617A55800F3D42A /* UITextField+Extensions.swift in Sources */,
 				A91227D62618AE50009A6EDB /* MoreScreenViewController.swift in Sources */,
+				A99724BE261E40CF0053A489 /* OrderDetailsScreenViewController.swift in Sources */,
 				A9286B582617A55800F3D42A /* UIViewController+Extensions.swift in Sources */,
 				A9286B5C2617A55800F3D42A /* UITableView+Extensions.swift in Sources */,
 				A91227E42618AE50009A6EDB /* User.swift in Sources */,
 				A9286B562617A55800F3D42A /* Constants.swift in Sources */,
 				A91227C42618AE4F009A6EDB /* SplashScreenViewModel.swift in Sources */,
-				A91227CE2618AE4F009A6EDB /* OrderScreenViewModel.swift in Sources */,
+				A9972497261E38C70053A489 /* OrderScreenViewModel.swift in Sources */,
 				A91227E12618AE50009A6EDB /* More.swift in Sources */,
 				A91227EC2618AE50009A6EDB /* MoreCoordinator.swift in Sources */,
-				A91227CD2618AE4F009A6EDB /* OrderScreenViewController.swift in Sources */,
 				A91227D72618AE50009A6EDB /* MoreScreenViewModel.swift in Sources */,
 				A91227E32618AE50009A6EDB /* UserService.swift in Sources */,
 				A91227F22618AE99009A6EDB /* IChameTabbarController.swift in Sources */,

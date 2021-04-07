@@ -11,7 +11,7 @@
         <!--Order Details Screen View Controller-->
         <scene sceneID="MOg-RV-dkq">
             <objects>
-                <viewController storyboardIdentifier="MenuDetailsScreenViewController" id="4jC-Lh-CZt" customClass="OrderDetailsScreenViewController" customModule="IChameManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderDetailsScreenViewController" id="4jC-Lh-CZt" customClass="OrderDetailsScreenViewController" customModule="IChameManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I78-gB-ZIX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

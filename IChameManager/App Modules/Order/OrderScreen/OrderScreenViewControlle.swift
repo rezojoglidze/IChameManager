@@ -1,13 +1,13 @@
 //
-//  OrderScreenViewController.swift
-//  IChame
+//  OrderScreenViewControlle.swift
+//  IChameManager
 //
-//  Created by Rezo Joglidze on 3/18/21.
-//  Copyright © 2021 Rezo Joglidze. All rights reserved.
+//  Created by Rezo Joglidze on 4/7/21.
 //
 
 import UIKit
 import XCoordinator
+import RxSwift
 
 class OrderScreenViewController: UIViewController {
     
@@ -15,6 +15,8 @@ class OrderScreenViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    private var disposeBag = DisposeBag()
+
     static func instantiate(strongRouter: StrongRouter<OrderRoute>) -> Self {
         let viewController = ScreensAssembly.shared.container.resolve(Self.self, argument: strongRouter) ?? .init()
         return viewController
@@ -22,10 +24,18 @@ class OrderScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.startLoader()
         setupTableView()
         setupNavigationBar()
         viewModel.loadOrders(fail: self.standardFailBlock)
+        setupObservables()
+    }
+    
+    private func setupObservables() {
+        viewModel.ordersDidLoad.subscribe(onNext: { [weak self] _ in
+           self?.stopLoader()
+            self?.tableView.reloadData()
+        }).disposed(by: disposeBag)
     }
     
     private func setupNavigationBar() {
@@ -43,13 +53,13 @@ class OrderScreenViewController: UIViewController {
 
 extension OrderScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return viewModel.numberOfRowsInSection()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: OrderScreenTableViewCell.self)) as! OrderScreenTableViewCell
         if let item = viewModel.item(at: indexPath) {
-            cell.fill(img: item.img, title: item.type.title)
+            cell.fill(img: UIImage(named: "coldDishes_icon"), title: item.restaurantId)
         }
         return cell
     }

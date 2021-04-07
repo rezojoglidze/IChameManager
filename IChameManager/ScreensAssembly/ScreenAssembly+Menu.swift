@@ -34,15 +34,14 @@ extension ScreensAssembly {
     }
     
     func setupMenuDetailsScreen() {
-        self.container.register(OrderDetailsScreenViewModel.self) { (resolver, router: StrongRouter<OrderRoute>, menuItems: [MenuItem]) -> OrderDetailsScreenViewModel in
-            let viewModel = OrderDetailsScreenViewModel(router: router, menuItems: menuItems)
+        self.container.register(OrderDetailsScreenViewModel.self) { (resolver, router: StrongRouter<OrderRoute>, order: Order) -> OrderDetailsScreenViewModel in
+            let viewModel = OrderDetailsScreenViewModel(router: router, order: order)
             return viewModel
         }
-        self.container.register(OrderDetailsScreenViewController.self) { (resolver, router: StrongRouter<OrderRoute>, menuItems: [MenuItem], title: String) -> OrderDetailsScreenViewController in
-            let viewModel = resolver.resolve(OrderDetailsScreenViewModel.self, arguments: router, menuItems)
+        self.container.register(OrderDetailsScreenViewController.self) { (resolver, router: StrongRouter<OrderRoute>, order: Order) -> OrderDetailsScreenViewController in
+            let viewModel = resolver.resolve(OrderDetailsScreenViewModel.self, arguments: router, order)
             let viewController = OrderDetailsScreenViewController.loadFromStoryboard()
             viewController.viewModel = viewModel
-            viewController.navigationTitle = title
             return viewController
         }
     }

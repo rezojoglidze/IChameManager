@@ -11,7 +11,7 @@ import XCoordinator
 
 enum OrderRoute: Route {
     case order
-    case orderDetails(menuItems: [MenuItem], title: String)
+    case orderDetails(order: Order)
 }
 
 class OrderCoordinator: NavigationCoordinator<OrderRoute> {
@@ -26,8 +26,8 @@ class OrderCoordinator: NavigationCoordinator<OrderRoute> {
         case .order:
             let menu = OrderScreenViewController.instantiate(strongRouter: self.strongRouter)
             return .push(menu)
-        case .orderDetails(let menuItems, let title):
-            let menuDetails = OrderDetailsScreenViewController.instantiate(strongRouter: self.strongRouter, menuItems: menuItems, title: title)
+        case .orderDetails(let order):
+            let menuDetails = OrderDetailsScreenViewController.instantiate(strongRouter: self.strongRouter, order: order)
             return .push(menuDetails)
         }
     }
