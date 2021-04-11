@@ -12,6 +12,7 @@ import XCoordinator
 enum AuthRoute: Route {
     case authScreen
     case mainTabbarScreen
+    case alert(title: String, text: String, call: ((UIAlertAction) -> Void)? = nil)
 }
 
 class AuthCoordinator: NavigationCoordinator<AuthRoute> {
@@ -30,6 +31,12 @@ class AuthCoordinator: NavigationCoordinator<AuthRoute> {
         case .mainTabbarScreen:
             let tab = MainTabbarCoordinator()
             return .trigger(TabbarRoute.root, on: tab)
+        case .alert(let title, let text, let call):
+            let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
+            let okAction =  UIAlertAction(title: "OK", style: .default, handler: call)
+            alert.addAction(okAction)
+            
+            return .present(alert)
         }
     }
 }

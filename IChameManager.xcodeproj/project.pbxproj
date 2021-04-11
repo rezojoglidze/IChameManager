@@ -303,8 +303,8 @@
 		A91227AB2618AE4E009A6EDB /* User */ = {
 			isa = PBXGroup;
 			children = (
-				A91227AC2618AE4E009A6EDB /* UserService.swift */,
 				A91227AD2618AE4E009A6EDB /* User.swift */,
+				A91227AC2618AE4E009A6EDB /* UserService.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";

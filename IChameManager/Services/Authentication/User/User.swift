@@ -7,8 +7,11 @@
 //
 
 import Foundation
-import FirebaseAuth
 
-class User {
-    static var current: FirebaseAuth.User?
+struct User: Codable {
+    static var current: User?
+    
+    var email: String
+    var password: String
+    var restaurantId: String
 }

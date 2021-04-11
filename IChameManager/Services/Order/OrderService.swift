@@ -16,7 +16,7 @@ class OrderService {
     
     func loadOrders(success: @escaping ([Order]) -> Void,
                     fail: @escaping Network.StatusBlock) {
-        db.collection(Constants.bucketiOS).whereField("restaurantId", isEqualTo: "qM46LjeUVons6c27owM8")
+        db.collection(Constants.orderiOS).whereField("restaurantId", isEqualTo: User.current?.restaurantId)
             .getDocuments() { (querySnapshot, err) in
                 var orders: [Order] = []
                 if let err = err {

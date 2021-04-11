@@ -26,11 +26,6 @@ class SplashScreenViewModel {
 
 extension SplashScreenViewModel: SplashScreenViewModelProtocol {
     func triggerSplashScreenCompletion() {
-        if let user = Auth.auth().currentUser {
-            User.current = user
-            router.trigger(.authorizationScreen(initialRoute: .mainTabbarScreen))
-        } else {
-            router.trigger(.authorizationScreen(initialRoute: .authScreen))
-        }
+        router.trigger(.authorizationScreen(initialRoute: .authScreen))
     }
 }

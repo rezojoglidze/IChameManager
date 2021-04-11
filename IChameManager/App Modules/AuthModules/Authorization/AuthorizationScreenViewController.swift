@@ -48,6 +48,10 @@ class AuthorizationScreenViewController: UIViewController {
             self?.stopLoader()
             self?.viewModel.triggerAuthorizationCompletion()
         }).disposed(by: disposeBag)
+        
+        viewModel.showLoader.subscribe(onNext: { [weak self] show in
+            show ? self?.startLoader() : self?.stopLoader()
+        }).disposed(by: disposeBag)
     }
     
     func checkValidation() {

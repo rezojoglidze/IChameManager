@@ -16,6 +16,8 @@ class Constants {
     static let menuiOS = "menu_iOS"
     static let bucket = "bucket"
     static let bucketiOS = "bucket_iOS"
+    static let orderiOS = "order_iOS"
+    static let managers = "managers"
     
     struct Animation {
         static let defaultDuration: TimeInterval = 0.27
